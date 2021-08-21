@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#SBATCH --job-name=Delphes
+#SBATCH --ntasks-per-node=4
+
+
+module load conda/py3-latest
+source activate root_env
+
+python run_delphes.py

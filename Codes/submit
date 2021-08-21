@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#SBATCH --job-name=MadRun
+#SBATCH --ntasks-per-node=16
+
+module load conda/py3-latest
+
+#conda env list
+source activate root_env
+
+python --version
+python compute_processes.py

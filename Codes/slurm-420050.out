@@ -1,0 +1,410 @@
+Running SLURM prolog script on gold60.cluster.local
+===============================================================================
+Job started on Fri Aug 20 15:29:53 BST 2021
+Job ID          : 420050
+Job name        : MadRun
+WorkDir         : /mainfs/home/mjad1g20/HEP/WorkArea/BLSSM-Double-Peak/Codes
+Command         : /mainfs/home/mjad1g20/HEP/WorkArea/BLSSM-Double-Peak/Codes/submit
+Partition       : serial
+Num hosts       : 1
+Num cores       : 16
+Num of tasks    : 16
+Hosts allocated : gold60
+Job Output Follows ...
+===============================================================================
+Python 3.9.5
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.1.1                 2021-05-28         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/HEPTools/lhapdf6_py3/bin/lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/compute_process.txt
+The import format was not given, so we guess it as command
+import model BLSSM-2 --modelname
+[1;34mimpossible to set default multiparticles p because No particle u in model[0m
+[1;34mimpossible to set default multiparticles j because No particle u in model[0m
+[1;34mimpossible to set default multiparticles l+ because No particle e+ in model[0m
+[1;34mimpossible to set default multiparticles l- because No particle e- in model[0m
+[1;34mimpossible to set default multiparticles vl because No particle ve in model[0m
+[1;34mimpossible to set default multiparticles vl~ because No particle ve~ in model[0m
+Defined multiparticle all = g a go sd1 sd2 sd3 sd4 sd5 sd6 su1 su2 su3 su4 su5 su6 sd1c sd2c sd3c sd4c sd5c sd6c su1c su2c su3c su4c su5c su6c d1 d2 d3 u1 u2 u3 d1bar d2bar d3bar u1bar u2bar u3bar se1 se2 se3 se4 se5 se6 ni1 ni2 ni3 ni4 ni5 ni6 nr1 nr2 nr3 nr4 nr5 nr6 h1 h2 h3 h4 ah3 ah4 hm2c z zp wmc se1c se2c se3c se4c se5c se6c hm2 wm n1 n2 n3 n4 n5 n6 n7 c1bar c2bar nu1 nu2 nu3 nu4 nu5 nu6 e1 e2 e3 c1 c2 e1bar e2bar e3bar
+define p = g d1 d2  u1 u2  d1bar d2bar u1bar u2bar
+Defined multiparticle p = g d1 d2 u1 u2 d1bar d2bar u1bar u2bar
+define l+ = e1bar e2bar
+Defined multiparticle l+ = e1bar e2bar
+define l- = e1 e2
+Defined multiparticle l- = e1 e2
+generate p p > h1 > a a
+INFO: Checking for minimal orders which gives processes. 
+INFO: Please specify coupling orders to bypass this step. 
+INFO: Trying process: g g > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: d1 d1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: d1 d2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: d2 d1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: d2 d2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: u1 u1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: u1 u2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: u2 u1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: u2 u2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1  
+INFO: Process has 1 diagrams 
+INFO: Process d1bar d1 > a a added to mirror process d1 d1bar > a a 
+INFO: Process d1bar d2 > a a added to mirror process d2 d1bar > a a 
+INFO: Process d2bar d1 > a a added to mirror process d1 d2bar > a a 
+INFO: Process d2bar d2 > a a added to mirror process d2 d2bar > a a 
+INFO: Process u1bar u1 > a a added to mirror process u1 u1bar > a a 
+INFO: Process u1bar u2 > a a added to mirror process u2 u1bar > a a 
+INFO: Process u2bar u1 > a a added to mirror process u1 u2bar > a a 
+INFO: Process u2bar u2 > a a added to mirror process u2 u2bar > a a 
+9 processes with 9 diagrams generated in 3.753 s
+Total: 9 processes with 9 diagrams
+output /scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68
+INFO: initialize a new directory: pph1aa_68 
+INFO: remove old information in pph1aa_68 
+INFO: Organizing processes into subprocess groups 
+INFO: Generating Helas calls for process: g g > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: g g > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Generating Helas calls for process: d1 d1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: d1 d1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Generating Helas calls for process: d1 d2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: d1 d2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Generating Helas calls for process: d2 d1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: d2 d1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Generating Helas calls for process: d2 d2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: d2 d2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Generating Helas calls for process: u1 u1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: u1 u1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Generating Helas calls for process: u1 u2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: u1 u2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Generating Helas calls for process: u2 u1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: u2 u1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Generating Helas calls for process: u2 u2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Processing color information for process: u2 u2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 @1 
+INFO: Creating files in directory P1_gg_aa 
+INFO: Generating Feynman diagrams for Process: g g > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group gg_aa 
+INFO: Creating files in directory P1_d1d1bar_aa 
+INFO: Generating Feynman diagrams for Process: d1 d1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group d1d1bar_aa 
+INFO: Creating files in directory P1_d1d2bar_aa 
+INFO: Generating Feynman diagrams for Process: d1 d2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group d1d2bar_aa 
+INFO: Creating files in directory P1_d2d1bar_aa 
+INFO: Generating Feynman diagrams for Process: d2 d1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group d2d1bar_aa 
+INFO: Creating files in directory P1_d2d2bar_aa 
+INFO: Generating Feynman diagrams for Process: d2 d2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group d2d2bar_aa 
+INFO: Creating files in directory P1_u1u1bar_aa 
+INFO: Generating Feynman diagrams for Process: u1 u1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group u1u1bar_aa 
+INFO: Creating files in directory P1_u1u2bar_aa 
+INFO: Generating Feynman diagrams for Process: u1 u2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group u1u2bar_aa 
+INFO: Creating files in directory P1_u2u1bar_aa 
+INFO: Generating Feynman diagrams for Process: u2 u1bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group u2u1bar_aa 
+INFO: Creating files in directory P1_u2u2bar_aa 
+INFO: Generating Feynman diagrams for Process: u2 u2bar > h1 > a a BSM<=1 HIG<=1 HIW<=1 WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group u2u2bar_aa 
+Generated helas calls for 9 subprocesses (9 diagrams) in 0.025 s
+Wrote files for 54 helas calls in 1.042 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 3 routines in  0.682 s
+save configuration file to /mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+Output to directory /mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68 done.
+Type "launch" to generate events from this process, or see
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/README
+Run "open index.html" to see more information about this process.
+launch /scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.1.1                 2021-05-28         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/Cards/me5_configuration.txt  
+INFO: load configuration from /mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/input/mg5_configuration.txt  
+INFO: load configuration from /mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+generate_events run_01
+stty: standard input: Inappropriate ioctl for device
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+INFO: copy /home/mjad1g20/HEP/SPHENO/SPheno-3.3.8/SPheno.spc.BLSSM as param_card.dat 
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param   : [32mparam_card.dat[0m                               |
+|  [31m2[0m. run     : [32mrun_card.dat[0m                                 |
+|  [31m3[0m. pythia8 : [32mpythia8_card.dat[0m                             |
+|  [31m4[0m. delphes : [32mdelphes_card.dat[0m                             |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+INFO: copy /mainfs/home/mjad1g20/HEP/WorkArea/BLSSM-Double-Peak/Codes/Cards/delphes_card_CMS.dat as delphes_card.dat 
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param   : [32mparam_card.dat[0m                               |
+|  [31m2[0m. run     : [32mrun_card.dat[0m                                 |
+|  [31m3[0m. pythia8 : [32mpythia8_card.dat[0m                             |
+|  [31m4[0m. delphes : [32mdelphes_card.dat[0m                             |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+set mh1 = 125
+[1mINFO: modify param_card information BLOCK mass with id (25,) set to 125.0 [0m
+set mh2 = 136
+[1mINFO: modify param_card information BLOCK mass with id (35,) set to 136.0 [0m
+set ebeam1 = 4000.0
+[1mINFO: modify parameter ebeam1 of the run_card.dat to 4000.0 [0m
+set ebeam2 = 4000.0
+[1mINFO: modify parameter ebeam2 of the run_card.dat to 4000.0 [0m
+[1;34mWARNING: Particle 2000012 with small width detected (1.24213456e-07): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+[1;34mWARNING: Particle 2000014 with small width detected (1.24061318e-07): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+[1;34mWARNING: Particle 2000016 with small width detected (1.24060779e-07): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+[1;34mWARNING: Particle 5000012 with small width detected (0.000115052457): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+[1;34mWARNING: Particle 5000014 with small width detected (0.000115052455): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+[1;34mWARNING: Particle 5000016 with small width detected (0.000115052049): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+[1;34mWARNING: Particle 112 with small width detected (5.14641889e-07): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+[1;34mWARNING: Particle 114 with small width detected (5.14656432e-07): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+[1;34mWARNING: Particle 116 with small width detected (5.14656483e-07): See https://answers.launchpad.net/mg5amcnlo/+faq/3053 to learn the special handling of that case [0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: The model takes too long to load so we bypass the updating of dependent parameter.
+This might create trouble for external program (like MadSpin/shower/...)
+The update can be forced without timer by typing 'update dependent' at the time of the card edition [0m
+Generating 10000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 21
+INFO: Running Survey 
+Working on SubProcesses
+INFO: Compiling for process 1/9. 
+INFO:     P1_gg_aa  
+INFO: Compiling for process 2/9. 
+INFO:     P1_d1d1bar_aa  
+INFO: Compiling for process 3/9. 
+INFO:     P1_d1d2bar_aa  
+INFO: Compiling for process 4/9. 
+INFO:     P1_d2d1bar_aa  
+INFO: Compiling for process 5/9. 
+INFO:     P1_d2d2bar_aa  
+INFO: Compiling for process 6/9. 
+INFO:     P1_u1u1bar_aa  
+INFO: Compiling for process 7/9. 
+INFO:     P1_u1u2bar_aa  
+INFO: Compiling for process 8/9. 
+INFO:     P1_u2u1bar_aa  
+INFO: Compiling for process 9/9. 
+INFO:     P1_u2u2bar_aa  
+INFO:     P1_gg_aa  
+INFO:  Idle: 0,  Running: 1,  Completed: -1 
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.059066 s
+INFO:     P1_d1d1bar_aa  
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.090576 s
+INFO:     P1_d1d2bar_aa  
+INFO:  Idle: 0,  Running: 1,  Completed: -1 
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.140901 s
+INFO:     P1_d2d1bar_aa  
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.086952 s
+INFO:     P1_d2d2bar_aa  
+INFO:  Idle: 0,  Running: 1,  Completed: -1 
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.079213 s
+INFO:     P1_u1u1bar_aa  
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.134887 s
+INFO:     P1_u1u2bar_aa  
+INFO:  Idle: 0,  Running: 1,  Completed: -1 
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.130504 s
+INFO:     P1_u2u1bar_aa  
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.065713 s
+INFO:     P1_u2u2bar_aa  
+INFO:  Idle: 0,  Running: 1,  Completed: -1 
+/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/SubProcesses/survey.sh run in 1.074524 s
+INFO: End survey 
+refine 10000
+INFO: Refine results to 10000 
+INFO: Generating 10000.0 unweighted events. 
+sum of cpu time of last step: 12 seconds
+INFO: Effective Luminosity 439577.8028337362 pb^-1 
+INFO: need to improve 1 channels 
+- Current estimate of cross-section: 0.027298921653099995 +- 0.0002558807376442253
+    P1_gg_aa 
+ajob2 run in 2.024571 s
+INFO:  Idle: 10,  Running: 1,  Completed: 1 
+ajob1 run in 2.044874 s
+ajob5 run in 2.048087 s
+INFO:  Idle: 8,  Running: 1,  Completed: 3 
+ajob12 run in 2.051425 s
+ajob4 run in 2.049473 s
+INFO:  Idle: 6,  Running: 1,  Completed: 5 
+ajob3 run in 2.044119 s
+ajob7 run in 2.034586 s
+INFO:  Idle: 4,  Running: 1,  Completed: 7 
+ajob6 run in 2.084798 s
+ajob11 run in 2.048504 s
+INFO:  Idle: 2,  Running: 1,  Completed: 9 
+ajob10 run in 2.057245 s
+ajob9 run in 2.033953 s
+INFO:  Idle: 0,  Running: 1,  Completed: 11 
+ajob8 run in 2.049781 s
+    P1_d1d1bar_aa 
+    P1_d1d2bar_aa 
+    P1_d2d1bar_aa 
+    P1_d2d2bar_aa 
+    P1_u1u1bar_aa 
+    P1_u1u2bar_aa 
+    P1_u2u1bar_aa 
+    P1_u2u2bar_aa 
+INFO: Combining runs 
+sum of cpu time of last step: 38 seconds
+INFO: finish refine 
+refine 10000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.02727 +- 5.215e-05 pb
+     Nb of events :  10000
+ 
+INFO: No version of lhapdf. Can not run systematics computation 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+Follow Pythia8 shower by running the following command (in a separate terminal):
+    tail -f /mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/Events/run_01/tag_1_pythia8.log
+[1;34mWARNING: Install gnuplot to be able to view the plots generated at :
+    [0m
+INFO: Pythia8 shower finished after 1 seconds. 
+NO INPUT[1;31mCommand "generate_events run_01" interrupted with error:
+EOFError : EOF when reading a line
+Please report this bug on https://bugs.launchpad.net/mg5amcnlo
+More information is found in '/mainfs/scratch/mjad1g20/HEP/MG5_aMC_v3_1_1/double_peak/pph1aa_68/run_01_tag_1_debug.log'.
+Please attach this file to your report.[0m
+INFO: storing files of previous run 
+INFO: Done 
+INFO:  
+INFO:  
+quit
+INFO:  
+quit
+==============================================================================
+Running epilogue script on gold60.
+
+Submit time  : 2021-08-20T15:29:51
+Start time   : 2021-08-20T15:29:52
+End time     : 2021-08-20T15:31:56
+Elapsed time : 00:02:04 (Timelimit=02:00:00)
+
+Job ID: 420050
+Cluster: i5
+User/Group: mjad1g20/wf
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 16
+CPU Utilized: 00:02:23
+CPU Efficiency: 7.21% of 00:33:04 core-walltime
+Job Wall-clock time: 00:02:04
+Memory Utilized: 471.55 MB
+Memory Efficiency: 0.25% of 184.69 GB
+
