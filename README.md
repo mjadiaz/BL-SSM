@@ -1,4 +1,5 @@
-#research
+
+
 ### Model Files
 The Sarah file was taken from [B-L-SSM – Trac – Hepforge (sarah.hepforge.org)](https://sarah.hepforge.org/trac/wiki/B-L-SSM).  This model was created by L.Basso, F.Staub. The UFO and SPHENO files where created in Mathematica by SARAH by an `generate_model.m` through: 
 ```mathematica
@@ -14,8 +15,9 @@ MakeCHep[]
 Quit[];
 ```
 
-### 
-I generated the param_card.dat files with SPheno with the low energy limit of the Les Houches file. [LesHouches.in.blssm](Files/LesHouches.in.blssm). The input parametes are the ones in TABLE I in [2015. W. Abdallah. S. Khalil. S. Moretti](References/Files/2015.%20S.%20Moretti.%20Double%20Higgs%20peak%20in%20the%20minimal%20SUSY%20B%20−%20L%20model.pdf).
 
-![inputs](Files/Pasted%20image%2020210331203159.png)
+- There is an option to [create the CalcHep](https://gitlab.in2p3.fr/goodsell/sarah/-/wikis/CalcHep/CompHep) file to run it with spheno, that might be helpful. 
+	- `RunSPhenoViaCalcHep`: writes C code to run SPhenofrom the graphical interface of CalcHepto calculate the spectrum on the fly.
+
+- There are more options that should be looked.
 
