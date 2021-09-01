@@ -1,26 +1,26 @@
 Block MODSEL      #  
- 1 0               #  1/0: High/low scale input 
- 2 1              # Boundary Condition  
- 6 1               # Generation Mixing 
+ 1        0               #  1/0: High/low scale input 
+ 2        1              # Boundary Condition  
+ 6        1               # Generation Mixing 
  12 1000.          # Renormalization scale 
 Block SMINPUTS    # Standard Model inputs 
- 2 1.166370E-05    # G_F,Fermi constant 
- 3 1.187000E-01    # alpha_s(MZ) SM MSbar 
- 4 9.118870E+01    # Z-boson pole mass 
- 5 4.180000E+00    # m_b(mb) SM MSbar 
- 6 1.735000E+02    # m_top(pole) 
- 7 1.776690E+00    # m_tau(pole) 
+ 2      1.166370E-05    # G_F,Fermi constant 
+ 3      1.187000E-01    # alpha_s(MZ) SM MSbar 
+ 4      9.118870E+01    # Z-boson pole mass 
+ 5      4.180000E+00    # m_b(mb) SM MSbar 
+ 6      1.735000E+02    # m_top(pole) 
+ 7      1.776690E+00    # m_tau(pole) 
 Block MINPAR      # Input parameters 
  3   5.000000E+00    # TanBeta
 Block EXTPAR      # Input parameters 
- 1  5.500000E-01    # gBLinput
- 2 -1.200000E-01    # g1BLinput
- 3  1.700000E+03    # MZp
- 10 1.1500000E+00    # TBetaP
- 11 3.2302496E+03    # MuInput
- 12 1.0398589E+03    # MuPInput
- 13 2.3017355E+06    # BMuInput
- 14 1.4431883E+06    # BMuPInput
+ 1         5.500000E-01    # gBLinput
+ 2        -1.200000E-01    # g1BLinput
+ 3         1.700000E+03    # MZp
+ 10        1.1500000E+00    # TBetaP
+ 11        3.2302496E+03    # MuInput
+ 12        1.0398589E+03    # MuPInput
+ 13        2.3017355E+06    # BMuInput
+ 14        1.4431883E+06    # BMuPInput
 Block SPhenoInput   # SPheno specific input 
   1 -1              # error level 
   2  0              # SPA conventions 
