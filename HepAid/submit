@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --job-name=Scan
+#SBATCH --ntasks-per-node=16
+#SBATCH --time=4:00:00
+
+source /home/mjad1g20/.bashrc
+#module load conda/py3-latest
+source activate HepAid
+
+#conda env list
+python --version
+which python
+#python BLSSM.py
+python simple.py
