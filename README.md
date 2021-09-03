@@ -21,3 +21,8 @@ Quit[];
 
 - There are more options that should be looked.
 
+#### Useful links
+
+- [Running Jupyter Notebook on a remote server](https://docs.anaconda.com/anaconda/user-guide/tasks/remote-jupyter-notebook/)
+
+
