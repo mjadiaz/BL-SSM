@@ -1,0 +1,16 @@
+Running SLURM prolog script on gold59.cluster.local
+===============================================================================
+Job started on Mon Sep  6 11:08:23 BST 2021
+Job ID          : 453641
+Job name        : Scan
+WorkDir         : /mainfs/home/mjad1g20/HEP/WorkArea/BLSSM-Double-Peak/HepAid
+Command         : /mainfs/home/mjad1g20/HEP/WorkArea/BLSSM-Double-Peak/HepAid/submit
+Partition       : serial
+Num hosts       : 1
+Num cores       : 16
+Num of tasks    : 16
+Hosts allocated : gold59
+Job Output Follows ...
+===============================================================================
+Python 3.9.6
+/home/mjad1g20/.conda/envs/HepAid/bin/python
