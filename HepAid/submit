@@ -12,4 +12,5 @@ source activate HepAid
 python --version
 which python
 #python BLSSM.py
-python simple.py
+python BLSSM_HEscan.py
+ 
