@@ -1,0 +1,15 @@
+End time     : 2021-09-08T11:34:53
+Elapsed time : 00:30:02 (Timelimit=04:00:00)
+
+Job ID: 459895
+Cluster: i5
+User/Group: mjad1g20/wf
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 16
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.00% of 08:00:32 core-walltime
+Job Wall-clock time: 00:30:02
+Memory Utilized: 15.34 MB
+Memory Efficiency: 0.01% of 184.69 GB
+
