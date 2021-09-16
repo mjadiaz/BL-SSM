@@ -12,5 +12,5 @@ source activate HepAid
 python --version
 which python
 #python BLSSM.py
-python BLSSM_HEscan.py
- 
+#python BLSSM_HEscan_DoublePeak.py
+python BLSSM_mg5.py
